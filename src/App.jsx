@@ -1,6 +1,10 @@
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline font-fredoka">Hello world!</h1>
+    <div className="font-fredoka max-w-screen-xl mx-auto">
+      <Navbar />
+    </div>
   );
 }
 
