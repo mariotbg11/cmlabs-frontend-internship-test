@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <div className="hero bg-yellow-50 h-full px-2 w-full md:w-3/4 mx-auto rounded-lg">
+    <div className="hero bg-yellow-50 h-full px-2 my-16 w-full md:w-3/4 mx-auto rounded-lg">
       <div className="hero-content text-center">
         <div className="max-w-2xl">
           <p className="text-sm pb-6">Hi! Welcome to Meals 🍕</p>
