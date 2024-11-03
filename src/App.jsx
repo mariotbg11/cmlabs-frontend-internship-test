@@ -1,13 +1,10 @@
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+import { RouterProvider } from "react-router-dom";
+import router from "./router";
 
 function App() {
   return (
     <div className="font-fredoka max-w-screen-xl mx-auto px-2">
-      <Navbar />
-      <Hero />
-      <Footer />
+      <RouterProvider router={router} />
     </div>
   );
 }
