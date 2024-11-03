@@ -7,8 +7,8 @@ function CategoryFood() {
   );
 
   return (
-    <div className="bg-base-100 my-16">
-      <h2 className="text-4xl font-bold mb-14">Category Food</h2>
+    <div className="bg-base-100 my-16 px-2">
+      <h2 className="text-4xl font-bold mb-14">Category Meals</h2>
       <CardList data={data} loading={loading} error={error} />
     </div>
   );
