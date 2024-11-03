@@ -1,6 +1,6 @@
 import CardItem from "./CardItem";
 
-function CardList({ data, loading, error }) {
+function CardCategoryFoodDetailList({ data, loading, error }) {
   if (loading)
     return (
       <div className="flex flex-col justify-center items-center h-[600px]">
@@ -39,12 +39,11 @@ function CardList({ data, loading, error }) {
     <div className="w-full">
       {data && (
         <div className="grid grid-cols-1 md:grid-cols-4 gap-x-4 gap-y-8">
-          {data.categories.map((category) => (
+          {data.meals.map((meal) => (
             <CardItem
-              key={category.idCategory}
-              image={category.strCategoryThumb}
-              title={category.strCategory}
-              link={`/category/${category.strCategory}`}
+              key={meal.idMeal}
+              image={meal.strMealThumb}
+              title={meal.strMeal}
             />
           ))}
         </div>
@@ -53,4 +52,4 @@ function CardList({ data, loading, error }) {
   );
 }
 
-export default CardList;
+export default CardCategoryFoodDetailList;
