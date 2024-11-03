@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Hero() {
   return (
     <div className="hero bg-yellow-50 h-full px-2 my-16 w-full md:w-3/4 mx-auto rounded-lg">
@@ -17,7 +19,9 @@ function Hero() {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="btn btn-primary">Let's Go!</button>
+          <Link to="/category" className="btn btn-primary">
+            Let's Go!
+          </Link>
         </div>
       </div>
     </div>
