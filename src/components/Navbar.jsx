@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <div className="navbar bg-base-100">
@@ -10,7 +12,7 @@ function Navbar() {
             <a>Home</a>
           </li>
           <li>
-            <a>Food</a>
+            <Link to="/category">Food</Link>
           </li>
         </ul>
       </div>
