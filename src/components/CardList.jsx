@@ -3,14 +3,14 @@ import CardItem from "./CardItem";
 function CardList({ data, loading, error }) {
   if (loading)
     return (
-      <div className="flex flex-col justify-center items-center h-[600px]">
+      <div className="flex flex-col justify-center items-center h-[700px]">
         <span className="loading loading-spinner loading-lg"></span>
       </div>
     );
 
   if (error)
     return (
-      <div className="flex flex-col justify-center items-center  h-[600px] w-full md:w-[600px] mx-auto">
+      <div className="flex flex-col justify-center items-center  h-[700px] w-full md:w-[600px] mx-auto">
         <div
           role="alert"
           className="alert alert-error flex flex-col md:flex-row justify-center items-center rounded-lg"
